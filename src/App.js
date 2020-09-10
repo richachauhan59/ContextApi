@@ -2,11 +2,17 @@
 import React from "react";
 import { AuthContext } from "./Context/AuthContextProvider";
 import Form from "./Component/Form";
+import Theame from './ContextTheme/ThemeMain'
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Authentication Using Context API</h1>
+
+      <Theame/>
+
+
+      
+      {/* <h1>Authentication Using Context API</h1>
       <Form/>
       <AuthContext.Consumer>
         {({ isAuth }) => (
@@ -19,7 +25,7 @@ export default function App() {
         }}
           > {isAuth ? "Authenticated" : "Not Authenticated"} </div>
         )}
-      </AuthContext.Consumer>
+      </AuthContext.Consumer> */}
     </div>
   );
 }
